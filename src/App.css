@@ -948,6 +948,10 @@ footer .container .content .social p {
     display: none;
   }
 
+  .content-img{
+    display: none;
+  }
+
   .botao-header {
     width: 190px;
   }

@@ -10,7 +10,7 @@ function Contact() {
         "service_4tcwf2n",
         "template_zpmssr6",
         e.currentTarget,
-        "4bSRLTuRowvRFCSKT "
+        "4bSRLTuRowvRFCSKT"
       )
       .then(
         (result) => {

@@ -1,4 +1,4 @@
-import profileImg from '../../assets/imagem-eu3.png';
+import profileImg from '../../assets/imagem-eu2.png';
 
 function About() {
   return (

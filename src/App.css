@@ -375,8 +375,8 @@ header .container .content .extra-nav a:hover span {
 
 .eu {
   width: 450px;
-  margin-left: 270px;
-  margin-right: 270px;
+  margin-left: 200px;
+  margin-right: 200px;
   border-radius: 10px;
 }
 
@@ -395,6 +395,7 @@ header .container .content .extra-nav a:hover span {
   font-weight: 500;
   font-style: italic;
   line-height: 1.4rem;
+  text-align: left;
 }
 
 .about .container .content .about-me button {
@@ -547,7 +548,7 @@ header .container .content .extra-nav a:hover span {
 .project .container .content .project-area {
   position: relative;
   display: flex;
-  height: 650px;
+  height: 100%;
   gap: 1rem;
 }
 
@@ -571,7 +572,7 @@ header .container .content .extra-nav a:hover span {
 }
 
 .project .container .content .project-area .projects {
-  margin-top: 200px;
+  margin-top: 150px;
   position: relative;
   cursor: pointer;
   display: flex;
@@ -582,12 +583,13 @@ header .container .content .extra-nav a:hover span {
   background: #0c0c0c;
   border-radius: 64px;
   overflow: hidden;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project .container .content .project-area .projects img {
   filter: brightness(100%);
-  width: 550px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   transition: 0.3s linear;
 }
 
@@ -607,11 +609,13 @@ header .container .content .extra-nav a:hover span {
 
 .project .container .content .project-area .projects .desc h1 {
   font: italic bold 4rem "IBM Plex Sans", sans-serif;
+  font-size: 30px;
 }
 
 .project .container .content .project-area .projects .desc p {
   text-align: center;
-  width: 75%;
+  width: 90%;
+  font-size: 15px;
 }
 
 .project .container .content .project-area .projects:hover .desc {
@@ -1092,24 +1096,25 @@ footer .container .content .social p {
 
   .project .container .content .project-area .projects {
     width: 100%;
-    height: 300px;
+    height: 100%;
     margin-top: 16px;
-    border-radius: 32px;
-    border: 1px solid #fff;
+    border-radius: 35px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .project .container .content .project-area .projects img {
-    width: 100%;
+    width: 400px;
     height: 100%;
     object-fit: contain;
   }
 
   .project .container .content .project-area .projects .desc h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   
   .project .container .content .project-area .projects .desc p {
-    font-size: 15px;
+    font-size: 14px;
+    width: 350px;
   }
 
   /* Contact Section */

@@ -13,13 +13,13 @@ const projectsData = [
     link: "https://clima-now-omega.vercel.app/",
     img: climaNowImg,
     title: "Clima Now",
-    desc: "Uma aplicação web minimalista de consulta do tempo, desenvolvida especificamente para desktops (computadores), onde se priorizou a velocidade e a clareza dos dados climáticos atuais e previsões. A usabilidade foi otimizada para telas maiores, integrando uma API de clima global.",
+    desc: "Uma aplicação web minimalista de consulta do tempo, desenvolvida especificamente para desktops (computadores), onde se priorizou a clareza dos dados climáticos atuais e previsões.",
   },
   {
     link: "https://projeto-la-nine.vercel.app",
     img: laWebImg,
     title: "Projeto LA",
-    desc: "Landing page de alta conversão desenvolvida para o lançamento do ebook de dietas do Projeto LA. O projeto foi focado em criar uma jornada de usuário persuasiva, com design limpo e chamadas para ação (CTAs) estratégicas para maximizar as vendas e garantir uma experiência de compra fluida em qualquer dispositivo.",
+    desc: "Landing page desenvolvida para o lançamento do ebook de dietas do Projeto LA. O projeto foi focado em criar uma jornada de usuário persuasiva, com design limpo e chamadas (CTAs) estratégicas para maximizar as vendas.",
   },
 ];
 

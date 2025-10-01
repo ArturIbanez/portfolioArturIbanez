@@ -7,8 +7,6 @@ function Footer() {
         <div className="content">
           <h1>ARTUR IBAÑEZ PORTFÓLIO</h1>
           <div className="social">
-            {/* 2. Use os ícones como componentes normais */}
-            {/* Props como 'color' e 'size' funcionam da mesma forma! */}
             <a href="https://www.linkedin.com/in/artur-machado-ibañez-876332359" target="_blank" rel="noopener noreferrer" className="logo">
               <BiLogoLinkedinSquare color='white' size='24px' />
             </a>

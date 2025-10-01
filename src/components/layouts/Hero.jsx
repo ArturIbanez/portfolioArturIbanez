@@ -5,9 +5,8 @@ const rotatingWords = ['FULLSTACK', 'FREELANCER', 'WEB', 'JAVASCRIPT'];
 function Hero() {
   const [localTime, setLocalTime] = useState('');
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [animationClass, setAnimationClass] = useState('word-enter'); // Novo estado para controlar a classe de animação
+  const [animationClass, setAnimationClass] = useState('word-enter');
 
-  // Efeito para o relógio (seu código original)
   useEffect(() => {
     const now = new Date();
     const time = now.toLocaleTimeString("pt-BR", {
@@ -18,28 +17,22 @@ function Hero() {
     setLocalTime(`${time} GMT-3`);
   }, []);
 
-  // Efeito para a troca de palavras com animação
   useEffect(() => {
-    const totalAnimationTime = 1000; // Tempo total da animação de saída/entrada (em ms)
-    const displayTime = 3000;      // Tempo que a palavra fica visível antes de começar a sair
-
+    const totalAnimationTime = 1000;
+    const displayTime = 3000;
     const intervalId = setInterval(() => {
-      setAnimationClass('word-exit'); // Inicia a animação de saída
+      setAnimationClass('word-exit');
 
-      // Após a animação de saída, troca a palavra e inicia a animação de entrada
       const timeoutId = setTimeout(() => {
         setCurrentWordIndex(prevIndex => (prevIndex + 1) % rotatingWords.length);
-        setAnimationClass('word-enter'); // Inicia a animação de entrada
-      }, totalAnimationTime / 2); // Metade do tempo para a troca e entrada
-
-      // Limpeza do timeout interno
+        setAnimationClass('word-enter');
+      }, totalAnimationTime / 2);
       return () => clearTimeout(timeoutId);
 
-    }, displayTime + totalAnimationTime / 2); // Intervalo total: tempo visível + metade do tempo de animação (para garantir que a entrada seja suave)
+    }, displayTime + totalAnimationTime / 2);
 
-    // Limpeza do intervalo principal
     return () => clearInterval(intervalId);
-  }, []); // O array vazio [] garante que este efeito rode apenas uma vez
+  }, []);
 
   return (
     <section className="hero">
@@ -50,8 +43,8 @@ function Hero() {
           <div className="line"></div>
           <div className="text">
             <h1
-              className={`row-1 ${animationClass}`} // Aplica a classe de animação dinamicamente
-              data-aos="fade-right" // Você pode manter o AOS, mas a animação CSS pode sobrescrevê-lo ou se somar
+              className={`row-1 ${animationClass}`}
+              data-aos="fade-right"
               data-aos-duration="2000"
             >
               {rotatingWords[currentWordIndex]}

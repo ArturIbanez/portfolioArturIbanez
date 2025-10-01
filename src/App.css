@@ -1,7 +1,3 @@
-/* ========================================= */
-/* 01: BASE & GLOBAL (Variáveis, Reset, Corpo) */
-/* ========================================= */
-
 :root {
   --primary: #8e05c2;
   --black: #0f0f0f;
@@ -26,7 +22,6 @@ body {
   color: var(--white);
 }
 
-/* Scrollbar Customization */
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -39,20 +34,12 @@ body {
   background-color: var(--white);
 }
 
-/* ========================================= */
-/* 02: LAYOUT (Containers) */
-/* ========================================= */
-
 .container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding: 1.5rem 6rem;
 }
-
-/* ========================================= */
-/* 03: HEADER */
-/* ========================================= */
 
 header {
   position: fixed;
@@ -113,7 +100,6 @@ header .container .content nav a:hover::after {
   transition: 0.2s linear;
 }
 
-/* Extra Nav Button */
 header .container .content .extra-nav {
   display: flex;
   align-items: center;
@@ -159,10 +145,6 @@ header .container .content .extra-nav a:hover span {
   transition: color 0.3s linear;
 }
 
-/* ========================================= */
-/* 04: HERO SECTION (Principal) */
-/* ========================================= */
-
 .hero {
   position: relative;
   min-height: 100vh;
@@ -179,7 +161,6 @@ header .container .content .extra-nav a:hover span {
   align-items: center;
 }
 
-/* Text */
 .hero .container .content .text {
   display: flex;
   flex-direction: column;
@@ -202,7 +183,6 @@ header .container .content .extra-nav a:hover span {
   display: inline-block;
 }
 
-/* Decorative Elements */
 .content-img {
   top: 10px;
   left: 245px;
@@ -210,7 +190,6 @@ header .container .content .extra-nav a:hover span {
   width: 50px;
 }
 
-/* Arrow */
 .hero .container .content .arrow {
   position: absolute;
   bottom: 4rem;
@@ -231,7 +210,6 @@ header .container .content .extra-nav a:hover span {
   transition: 0.2s linear;
 }
 
-/* Short Info */
 .hero .container .content .short-info {
   position: absolute;
   bottom: 5rem;
@@ -291,7 +269,6 @@ header .container .content .extra-nav a:hover span {
   animation: pulse 1.5s infinite;
 }
 
-/* Animated Background Shapes */
 .hero .container .content .shape-1 {
   position: absolute;
   width: 200px;
@@ -326,10 +303,6 @@ header .container .content .extra-nav a:hover span {
   animation: line 50s infinite;
 }
 
-/* ========================================= */
-/* 05: ABOUT SECTION (Sobre Mim) */
-/* ========================================= */
-
 .about {
   position: relative;
   margin: 4rem 0;
@@ -344,7 +317,6 @@ header .container .content .extra-nav a:hover span {
   width: 100%;
 }
 
-/* Title and Photo */
 .about .container .content .title {
   display: flex;
   flex-direction: column;
@@ -380,7 +352,6 @@ header .container .content .extra-nav a:hover span {
   border-radius: 10px;
 }
 
-/* About Me Text and Button */
 .about .container .content .about-me {
   display: flex;
   flex-direction: column;
@@ -432,7 +403,6 @@ header .container .content .extra-nav a:hover span {
   transition: all 0.2s linear;
 }
 
-/* Marquee Text Wrapper */
 .about .container .content .text-wrapper {
   position: absolute;
   bottom: 2rem;
@@ -459,10 +429,6 @@ header .container .content .extra-nav a:hover span {
   -webkit-text-stroke-color: var(--white);
 }
 
-/* ========================================= */
-/* 06: PROJECT SECTION (Projetos) */
-/* ========================================= */
-
 .project {
   margin: 4rem 0;
   min-height: 100vh;
@@ -475,7 +441,6 @@ header .container .content .extra-nav a:hover span {
   gap: 1rem;
 }
 
-/* Header */
 .project .container .content .header {
   display: flex;
   justify-content: space-between;
@@ -509,7 +474,6 @@ header .container .content .extra-nav a:hover span {
   font-size: 3rem;
 }
 
-/* Button (View All) */
 .project .container .content .header button {
   cursor: pointer;
   display: flex;
@@ -544,7 +508,6 @@ header .container .content .extra-nav a:hover span {
   transition: all 0.2s linear;
 }
 
-/* Project Area */
 .project .container .content .project-area {
   position: relative;
   display: flex;
@@ -623,10 +586,6 @@ header .container .content .extra-nav a:hover span {
   transition: opacity 0.2s linear;
 }
 
-/* ========================================= */
-/* 07: CONTACT SECTION (Contato) */
-/* ========================================= */
-
 .contact {
   margin: 4rem 0;
   min-height: 100vh;
@@ -658,7 +617,6 @@ header .container .content .extra-nav a:hover span {
   height: 80%;
 }
 
-/* Left Side (Contact Text) */
 .contact .container .content .contact-area .left-side {
   width: 50%;
   height: 100%;
@@ -677,7 +635,6 @@ header .container .content .extra-nav a:hover span {
   margin-left: 30%;
 }
 
-/* Right Side (Form) */
 .contact .container .content .contact-area .right-side {
   width: 40%;
   height: 100%;
@@ -737,10 +694,6 @@ header .container .content .extra-nav a:hover span {
   transition: 0.2s linear;
 }
 
-/* ========================================= */
-/* 08: FOOTER */
-/* ========================================= */
-
 footer {
   min-height: 20vh;
 }
@@ -786,10 +739,6 @@ footer .container .content .social .logo:hover {
 footer .container .content .social p {
   font-weight: bold;
 }
-
-/* ========================================= */
-/* 09: KEYFRAMES (Animações) */
-/* ========================================= */
 
 @keyframes line {
   from {
@@ -851,7 +800,6 @@ footer .container .content .social p {
   }
 }
 
-/* Animação para a entrada e saída das palavras */
 .word-enter {
   animation: fadeInOut 1s ease-in-out forwards;
 }
@@ -922,12 +870,7 @@ footer .container .content .social p {
   }
 }
 
-/* ========================================= */
-/* 10: MEDIA QUERIES (Responsividade) */
-/* ========================================= */
-
 @media (max-width: 768px) {
-  /* Global Container */
   .container {
     padding: 24px 24px;
   }
@@ -948,7 +891,6 @@ footer .container .content .social p {
     font-size: 15px !important;
   }
 
-  /* Header */
   header .container .content nav {
     display: none;
   }
@@ -965,7 +907,6 @@ footer .container .content .social p {
     font-size: 15px !important;
   }
 
-  /* Hero Section */
   .hero .container .content .text {
     align-items: center;
     text-align: center;
@@ -987,7 +928,6 @@ footer .container .content .social p {
     bottom: 128px;
   }
 
-  /* Decorative Elements Hidden */
   .hero .container .content .shape-1,
   .hero .container .content .shape-2,
   .hero .container .content .line {
@@ -1000,7 +940,6 @@ footer .container .content .social p {
     left: 30%;
   }
 
-  /* Short Info */
   .hero .container .content .short-info {
     position: relative;
     bottom: 0;
@@ -1014,7 +953,6 @@ footer .container .content .social p {
     margin-top: 16px;
   }
 
-  /* About Section */
   .about {
     min-height: auto;
   }
@@ -1057,7 +995,6 @@ footer .container .content .social p {
     padding: 12px;
   }
 
-  /* Marquee Text (Text Wrapper) */
   .about .container .content .text-wrapper {
     position: relative;
     bottom: 0;
@@ -1068,7 +1005,6 @@ footer .container .content .social p {
     font-size: 64px;
   }
 
-  /* Project Section */
   .project {
     min-height: auto;
   }
@@ -1117,7 +1053,6 @@ footer .container .content .social p {
     width: 85%;
   }
 
-  /* Contact Section */
   .contact {
     min-height: auto;
   }

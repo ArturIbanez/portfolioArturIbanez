@@ -9,16 +9,15 @@ function Header() {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       if (scrollTop > lastScrollTop.current) {
-        setIsHidden(true); // Scroll para baixo
+        setIsHidden(true);
       } else {
-        setIsHidden(false); // Scroll para cima
+        setIsHidden(false);
       }
       lastScrollTop.current = scrollTop <= 0 ? 0 : scrollTop;
     };
 
     window.addEventListener('scroll', handleScroll);
 
-    // Função de limpeza para remover o listener quando o componente for desmontado
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };

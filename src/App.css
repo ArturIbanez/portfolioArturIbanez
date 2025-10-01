@@ -347,8 +347,7 @@ header .container .content .extra-nav a:hover span {
 
 .eu {
   width: 450px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 100px;
   border-radius: 10px;
 }
 
@@ -367,6 +366,7 @@ header .container .content .extra-nav a:hover span {
   font-style: italic;
   line-height: 1.4rem;
   text-align: left;
+  width: 400px;
 }
 
 .about .container .content .about-me button {
@@ -980,6 +980,10 @@ footer .container .content .social p {
 
   .about .container .content .title h1 {
     font-size: 40px;
+  }
+  
+  .about-me p{
+    width: 100% !important;
   }
 
   .eu {

@@ -61,7 +61,7 @@ function Hero() {
               <p className='disponibilidade'>Disponibilidade Freelancer</p>
               <h1 className='limitada'>
                 <div className="pulse"></div>
-                AGENDA LIMITADA
+                AGENDA DISPONÍVEL
               </h1>
             </div>
           </div>

@@ -13,7 +13,7 @@ function About() {
             <img className="eu" src={profileImg} alt="Artur Ibañez" />
           </div>
           <div className="about-me" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-            <p>Sou Artur Ibañez, um desenvolvedor focado em transformar ideias em realidade digital. Com código limpo e design moderno, construo sites que cativam e funcionam. Disponível para projetos freelancer. <br />
+            <p>Sou Artur Ibañez, um desenvolvedor focado em transformar ideias em realidade digital. Com código limpo e design moderno, construo sites que cativam e agregam valor. Disponível para projetos freelancer. <br />
             <br /> Com formação em Ciência da Computação pela Atitus Educação, busco atuar na área de desenvolvimento de software, aplicando minhas habilidades em programação, design de interfaces e boas práticas de código. Tenho interesse em oportunidades que me permitam evoluir tecnicamente, contribuir com soluções inovadoras e agregar valor aos projetos da empresa, seja em equipes de desenvolvimento web, aplicações interativas ou sistemas digitais.</p>
           </div>
           <div className="text-wrapper" data-aos="flip-up">
